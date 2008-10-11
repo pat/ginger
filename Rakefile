@@ -26,6 +26,7 @@ spec = Gem::Specification.new do |s|
     "LICENCE",
     "README.textile"
   ]
+  s.executables       = ["ginger"]
 end
 
 Rake::GemPackageTask.new(spec) do |p|
