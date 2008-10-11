@@ -1,0 +1,3 @@
+Ginger is a small gem that allows you to test your projects using multiple versions of gem libraries. The idea is from "Ian White's garlic":http://github.com/ianwhite/garlic/tree - but my approach is a bit different, since I don't test my plugins from within a rails application. Maybe they can be merged at some point - I just hacked this up quickly to fit my needs.
+
+Samples to come, once I actually have some generic working code.
