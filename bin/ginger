@@ -28,9 +28,14 @@ scenarios = Ginger::Configuration.instance.scenarios
 puts "No Ginger Scenarios defined" if scenarios.empty?
 
 scenarios.each_with_index do |scenario, index|
-  puts "Scenario #{index+1}"
-  File.open('.ginger', 'w') { |f| f.write index.to_s }
+  puts <<-SCENARIO
+
+-------------------
+Ginger Scenario #{index+1}
+-------------------
+  SCENARIO
   
+  File.open('.ginger', 'w') { |f| f.write index.to_s }
   system("rake #{ARGV.join(" ")}")
 end
 
