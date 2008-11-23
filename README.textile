@@ -10,7 +10,7 @@ Next, add the following line of code to your @spec_helper.rb@ file (or equivalen
 
 You'll want to put it as high up as possible - in particular, before any @require@ calls to libraries you want to cover multiple versions of.
 
-Step number three is creating the sets of scenarios in a file called @ginger_scenarios.rb@, which goes in the base of your project folder. Here's an example, showing off the syntax possibilities.
+Step number three is creating the sets of scenarios in a file called @ginger_scenarios.rb@, which should go in the root, spec or test directory of your project. Here's an example, showing off the syntax possibilities.
 
 <pre><code>require 'ginger'
 
