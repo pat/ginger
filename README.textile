@@ -44,3 +44,7 @@ And finally, you'll want to run the tests or specs for each scenario. This is do
 <pre><code>ginger spec
 ginger test
 ginger spec:unit</code></pre>
+
+h2. Contributors
+
+* "Adam Meehan":http://duckpunching.com/
