@@ -12,7 +12,9 @@ module Ginger
     end
     
     def self.detect_scenario_file
-      require 'ginger_scenarios' if File.exists?("ginger_scenarios.rb")
+      ['.','spec','test'].each do |path|
+        require "#{path}/ginger_scenarios" and break if File.exists?("#{path}/ginger_scenarios.rb")
+      end
     end
   end
 end
