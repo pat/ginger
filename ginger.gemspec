@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Pat Allan"]
-  s.date = %q{2008-10-11}
+  s.date = %q{2009-05-10}
   s.default_executable = %q{ginger}
   s.description = %q{Run specs/tests multiple times through different gem versions.}
   s.email = %q{pat@freelancing-gods.com}
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--title", "Ginger", "--line-numbers"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{ginger}
-  s.rubygems_version = %q{1.3.0}
+  s.rubygems_version = %q{1.3.1}
   s.summary = %q{Run specs/tests multiple times through different gem versions.}
   s.test_files = ["spec/ginger/configuration_spec.rb", "spec/ginger/kernel_spec.rb", "spec/ginger/scenario_spec.rb", "spec/ginger_spec.rb"]
 
