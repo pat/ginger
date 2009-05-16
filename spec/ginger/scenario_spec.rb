@@ -47,4 +47,11 @@ describe Ginger::Scenario do
     
     scenario.version("thinking_sphinx").should be_nil
   end
+
+  it "should return name of scenario if defined" do
+    scenario = Ginger::Scenario.new('Thinking Sphinx')
+    scenario.add "riddle", "0.9.8"
+    
+    scenario.name.should == "Thinking Sphinx"
+  end
 end

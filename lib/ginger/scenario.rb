@@ -1,5 +1,11 @@
 module Ginger
   class Scenario < Hash
+    attr_accessor :name
+
+    def initialize(name=nil)
+      @name = name
+    end
+
     def add(gem, version)
       self[gem] = version
     end

@@ -39,6 +39,10 @@ sphinx_scenario["thinking_sphinx"] = "0.9.8"</code></pre>
 
 Don't forget to add them to @config@'s scenarios collection, else they're not saved anywhere.
 
+To better discern different defined scenarios you can create them with a name. The name will be output when the scenario runs as the title. 
+
+<pre><code>sphinx_scenario = Ginger::Scenario.new('Thinking Sphinx 0.9.8')</code></pre>
+
 And finally, you'll want to run the tests or specs for each scenario. This is done using the @ginger@ CLI tool, which parrots whatever parameters you give it onto @rake@. So just do something like:
 
 <pre><code>ginger spec
