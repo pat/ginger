@@ -31,7 +31,7 @@ scenarios.each_with_index do |scenario, index|
   puts <<-SCENARIO
 
 -------------------
-Ginger Scenario #{index+1}
+Ginger Scenario: #{scenario.name || index+1}
 -------------------
   SCENARIO
   
