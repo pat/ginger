@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'ginger/configuration'
 require 'ginger/scenario'
 require 'ginger/kernel'
