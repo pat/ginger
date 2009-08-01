@@ -48,6 +48,8 @@ Spec::Rake::SpecTask.new do |t|
   t.spec_opts << "-c"
 end
 
+task :default => :spec
+
 desc "Generate RCov reports"
 Spec::Rake::SpecTask.new(:rcov) do |t|
   t.libs << 'lib'
