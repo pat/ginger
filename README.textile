@@ -2,7 +2,7 @@ Ginger is a small gem that allows you to test your projects using multiple versi
 
 To get it all working, you need to do four things. The first is, of course, to install this gem.
 
-<pre><code>sudo gem install freelancing-god-ginger --source=http://gems.github.com</code></pre>
+<pre><code>sudo gem install ginger --source=http://gemcutter.org</code></pre>
 
 Next, add the following line of code to your @spec_helper.rb@ file (or equivalent):
 
