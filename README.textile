@@ -52,3 +52,4 @@ ginger spec:unit</code></pre>
 h2. Contributors
 
 * "Adam Meehan":http://duckpunching.com/
+* "Darragh Curran":http://peelmeagrape.net/

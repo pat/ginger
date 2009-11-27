@@ -36,7 +36,10 @@ Ginger Scenario: #{scenario.name || index+1}
   SCENARIO
   
   File.open('.ginger', 'w') { |f| f.write index.to_s }
-  system("rake #{ARGV.join(" ")}")
+  
+  system("rake #{ARGV.join(" ")}")     || # Standard
+  system("rake.bat #{ARGV.join(" ")}") || # Windows
+  raise('Missing: rake or rake.bat. You might want to fix that.')
 end
 
 File.delete(file_path) if File.exists?(file_path)
