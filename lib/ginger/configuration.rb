@@ -13,7 +13,9 @@ module Ginger
     
     def self.detect_scenario_file
       ['.','spec','test'].each do |path|
-        require "#{path}/ginger_scenarios" and break if File.exists?("#{path}/ginger_scenarios.rb")
+        if File.exists?("#{path}/ginger_scenarios.rb")
+          require File.expand_path("#{path}/ginger_scenarios") and break
+        end
       end
     end
   end
